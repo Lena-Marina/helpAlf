@@ -12,7 +12,7 @@ findSpaceship("..........\n..........\n.....7....\n..........\n..........\n.....
 
 
 //to many ships
-findSpaceship("..........\n..........\n.......X..\n..........\n.....X....\n..........") => "to many Spaceships. - unclear which one is Alfs"
+findSpaceship("..........\n..........\n.......X..\n..........\n.....X....\n..........") => "to many Spaceships - unclear which one is Alfs"
 
 
 //out of bounds

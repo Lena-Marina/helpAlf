@@ -1,16 +1,30 @@
 TODO LIST
-"“ => 0 
+ 
+//normal cases
+findSpaceship("..........\n..........\n.......X..\n..........\n..........\n..........") => [7,2]
+findSpaceship("..........\n..........\n..........\n..........\n...X......\n..........") => [3,4]
 
-"1“ => 1 
 
-"1,2“ => 3 
+//no ship
+findSpaceship("..........\n..........\n..........\n..........\n..........\n..........") => "Spaceship lost forever."
+findSpaceship("..........\n..........\n.....A....\n..........\n..........\n..........") => "Spaceship lost forever."
+findSpaceship("..........\n..........\n.....7....\n..........\n..........\n..........") => "Spaceship lost forever."
 
-"1,27" => 28 
 
-"15,17,21" => 53 
+//to many ships
+findSpaceship("..........\n..........\n.......X..\n..........\n.....X....\n..........") => "to many Spaceships. - unclear which one is Alfs"
 
-"1,5,27,45“ => 78 
 
-"1,10,100,1000,10000“ => 11111 
+//out of bounds
+findSpaceship("..........\n..........\n..........\n..........\n..........\n..........\n..X.......") =>  "Spaceship lost forever."
 
-"A,10" => 10 
+
+//edge cases
+findSpaceship("X........\n..........\n..........\n..........\n..........\n..........") => [0,0]
+findSpaceship(".........\n..........\n..........\n..........\n..........\n.........X") => [9,5]
+
+
+
+//in case I want to add another test laster / empty template
+findSpaceship("..........\n..........\n..........\n..........\n..........\n..........") => [,]
+

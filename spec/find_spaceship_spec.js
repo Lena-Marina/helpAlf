@@ -3,7 +3,7 @@ describe('find Spaceship', function() {
 		shipFinder = new StringCalculator();
 	});
 
-	it('should return 0 for an empty string', function() {
-		expect(shipFinder.add('')).toEqual(0);
+	it('should return [7,2] for "..........\n..........\n.......X..\n..........\n..........\n.........."', function() {
+		expect(shipFinder.add('..........\n..........\n.......X..\n..........\n..........\n..........')).toEqual([7,2]);
 	});
 });

@@ -26,8 +26,8 @@ describe('find Spaceship', function() {
 	});
 
 	//to many ships
-	it('should return "to many Spaceships. - unclear which one is Alfs" for "..........\n..........\n.......X..\n..........\n.....X....\n.........."', function() {
-		expect(shipFinder.add('..........\n..........\n.......X..\n..........\n.....X....\n..........')).toEqual("Spaceship lost forever.");
+	it('should return "to many Spaceships - unclear which one is Alfs" for "..........\n..........\n.......X..\n..........\n.....X....\n.........."', function() {
+		expect(shipFinder.add('..........\n..........\n.......X..\n..........\n.....X....\n..........')).toEqual("to many Spaceships - unclear which one is Alfs");
 	});
 
 

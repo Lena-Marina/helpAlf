@@ -17,9 +17,9 @@ findSpaceShip.prototype.add = function(string_map) {
         const xIndex = row.indexOf("X");
 
         if (xIndex !== -1) {
-            x = xIndex;
+			if(x === 0){x = xIndex;}
+			else if( x != 0){ return "to many Spaceships - unclear which one is Alfs";}
             y = i;
-            break;
         }
     }
 

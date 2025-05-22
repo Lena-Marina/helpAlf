@@ -2,11 +2,11 @@ TODO LIST
  
 //normal cases
 findSpaceship("..........\n..........\n.......X..\n..........\n..........\n..........") => [7,2] //done
-findSpaceship("..........\n..........\n..........\n..........\n...X......\n..........") => [3,4]
+findSpaceship("..........\n..........\n..........\n..........\n...X......\n..........") => [3,4] //done
 
 
 //no ship
-findSpaceship("..........\n..........\n..........\n..........\n..........\n..........") => "Spaceship lost forever."
+findSpaceship("..........\n..........\n..........\n..........\n..........\n..........") => "Spaceship lost forever." //doing
 findSpaceship("..........\n..........\n.....A....\n..........\n..........\n..........") => "Spaceship lost forever."
 findSpaceship("..........\n..........\n.....7....\n..........\n..........\n..........") => "Spaceship lost forever."
 

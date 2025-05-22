@@ -35,5 +35,10 @@ describe('find Spaceship', function() {
 		expect(shipFinder.add('..........\n..........\n..........\n..........\n..........\n..........\n..X.......')).toEqual("Spaceship lost forever.");
 	});
 
+	//edge cases
+	it('[0,0] for "X........\n..........\n..........\n..........\n..........\n.........."', function() {
+		expect(shipFinder.add('X........\n..........\n..........\n..........\n..........\n..........')).toEqual([0,0]);
+	});
+
 });
 

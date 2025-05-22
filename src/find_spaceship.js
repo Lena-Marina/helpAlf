@@ -4,6 +4,8 @@ function findSpaceShip() {}
 
 findSpaceShip.prototype.add = function(string_map) {
 
+	if(!string_map.includes("X")){ return "Spaceship lost forever."}
+
     const rows = string_map.split("\n"); 
 
     let y = 0;
@@ -19,6 +21,8 @@ findSpaceShip.prototype.add = function(string_map) {
             break;
         }
     }
+
+	
 
     return [x, y];
 };

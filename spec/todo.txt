@@ -8,15 +8,16 @@ findSpaceship("..........\n..........\n..........\n..........\n...X......\n.....
 //no ship
 findSpaceship("..........\n..........\n..........\n..........\n..........\n..........") => "Spaceship lost forever." //done
 findSpaceship("..........\n..........\n.....A....\n..........\n..........\n..........") => "Spaceship lost forever." //done
-findSpaceship("..........\n..........\n.....7....\n..........\n..........\n..........") => "Spaceship lost forever." //doing
+findSpaceship("..........\n..........\n.....7....\n..........\n..........\n..........") => "Spaceship lost forever." //done
 
 
 //to many ships
-findSpaceship("..........\n..........\n.......X..\n..........\n.....X....\n..........") => "to many Spaceships - unclear which one is Alfs"
+findSpaceship("..........\n..........\n.......X..\n..........\n.....X....\n..........") 
+    	                                                    => "to many Spaceships - unclear which one is Alfs" //done
 
 
 //out of bounds
-findSpaceship("..........\n..........\n..........\n..........\n..........\n..........\n..X.......") =>  "Spaceship lost forever."
+findSpaceship("..........\n..........\n..........\n..........\n..........\n..........\n..X.......") =>  "Spaceship lost forever." //doing
 
 
 //edge cases

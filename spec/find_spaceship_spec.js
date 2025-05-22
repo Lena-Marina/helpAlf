@@ -30,6 +30,10 @@ describe('find Spaceship', function() {
 		expect(shipFinder.add('..........\n..........\n.......X..\n..........\n.....X....\n..........')).toEqual("to many Spaceships - unclear which one is Alfs");
 	});
 
+	////out of bounds
+	it('should return "Spaceship lost forever." for "..........\n..........\n..........\n..........\n..........\n..........\n..X......."', function() {
+		expect(shipFinder.add('..........\n..........\n..........\n..........\n..........\n..........\n..X.......')).toEqual("Spaceship lost forever.");
+	});
 
 });
 

@@ -1,6 +1,6 @@
 describe('find Spaceship', function() {
 	beforeEach(function() {
-		shipFinder = new StringCalculator();
+		shipFinder = new findSpaceShip();
 	});
 
 	it('should return [7,2] for "..........\n..........\n.......X..\n..........\n..........\n.........."', function() {

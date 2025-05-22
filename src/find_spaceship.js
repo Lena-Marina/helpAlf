@@ -18,7 +18,8 @@ findSpaceShip.prototype.add = function(string_map) {
 
         if (xIndex !== -1) {
 			y = i;
-			
+			if(y > 5){ return "Spaceship lost forever."; }
+
 			if(x === 0) {x = xIndex;}
 			else { return "to many Spaceships - unclear which one is Alfs";}
             

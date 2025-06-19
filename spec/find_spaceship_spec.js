@@ -44,5 +44,9 @@ describe('find Spaceship', function() {
 		expect(shipFinder.add('.........\n..........\n..........\n..........\n..........\n.........X')).toEqual([9,5]);
 	});
 	
+	//to many ships + Edge Case
+	it('should return "to many Spaceships - unclear which one is Alfs" for "X.........\n..........\n.......X..\n..........\n..........\n.........."', function() {
+		expect(shipFinder.add('X.........\n..........\n.......X..\n..........\n..........\n..........')).toEqual("to many Spaceships - unclear which one is Alfs");
+	});
 });
 

@@ -6,7 +6,10 @@ findSpaceShip.prototype.add = function(string_map) {
 
 	const MAX_ROWS = 5;
 
-	if(!string_map.includes("X")){ return "Spaceship lost forever."}
+	if(!string_map.includes("X"))
+    { 
+        return "Spaceship lost forever."
+    }
 
     const rows = string_map.split("\n"); //rows ist ein Array | an jedem Index ist ein Teil von string_map der hinter einem \n gelegen hat
 
@@ -20,7 +23,10 @@ findSpaceShip.prototype.add = function(string_map) {
 
         if (xIndex !== -1) {
 			y = i;
-			if(y > MAX_ROWS){ return "Spaceship lost forever."; }
+			if(y > MAX_ROWS)
+            { 
+                return "Spaceship lost forever."; 
+            }
 
 			if(xCounter === 0) 
             {

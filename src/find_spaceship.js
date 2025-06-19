@@ -12,6 +12,7 @@ findSpaceShip.prototype.add = function(string_map) {
 
     let x = 0;
 	let y = 0;
+    let xCounter = 0;
     
     for (let i = 0; i < rows.length; i++) {
         const row = rows[i];
@@ -21,7 +22,11 @@ findSpaceShip.prototype.add = function(string_map) {
 			y = i;
 			if(y > MAX_ROWS){ return "Spaceship lost forever."; }
 
-			if(x === 0) {x = xIndex;}
+			if(xCounter === 0) 
+            {
+                x = xIndex;
+                ++xCounter;
+            }
 			else { return "to many Spaceships - unclear which one is Alfs";} 
         }
     }

@@ -17,7 +17,7 @@ findSpaceship("..........\n..........\n.......X..\n..........\n.....X....\n.....
 
 //to many ships + Edge Case
 findSpaceship("X.........\n..........\n.......X..\n..........\n.....X....\n..........") 
-    	                                                    => "to many Spaceships - unclear which one is Alfs" //doing
+    	                                                    => "to many Spaceships - unclear which one is Alfs" //done
 
 
 //out of bounds
